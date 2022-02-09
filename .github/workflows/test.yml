@@ -29,6 +29,6 @@ jobs:
         pipenv install --deploy --dev
     - name: Relatório Coverage
       env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       run: |
         pipenv run codecov
