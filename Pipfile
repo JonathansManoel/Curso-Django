@@ -7,10 +7,12 @@ name = "pypi"
 django = "*"
 gunicorn = "*"
 heroku = "*"
+pytest = "*"
 
 [dev-packages]
 flake8 = "*"
 codecov = "*"
+pytest-cov = "*"
 
 [requires]
 python_version = "3.10.2"
