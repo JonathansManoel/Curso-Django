@@ -24,11 +24,15 @@ jobs:
       run: |
         python3 -m pip install --upgrade pip
         pip install pipenv
+        pipenv install pytest-cov
         pipenv install codecov
         pipenv sync -d
         pipenv install --deploy --dev
+    - name: Test with pytest
+      run: |
+        pipenv run pytest  --cov=pypro
     - name: Relatório Coverage
       env:
-        CODECOV_TOKEN: 'b2d137a5-badd-4346-899d-d986ef3c6d76'
+        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       run: |
         pipenv run codecov
