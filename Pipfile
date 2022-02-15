@@ -9,9 +9,6 @@ gunicorn = "*"
 heroku = "*"
 pytest = "*"
 python-decouple = "*"
-pytest-django = "*"
-pytest-cov = "*"
-codecov = "*"
 
 [dev-packages]
 flake8 = "*"
