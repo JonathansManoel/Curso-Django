@@ -81,10 +81,9 @@
         },
         "heroku": {
             "hashes": [
-                "sha256:5ae3f2f38ac0a9ef50ddefd84e3e11895e22785003533a06a35108eadb716a1f"
+                "sha256:cbeba42b628bc38504d49ace86b8c1729ab2156e530fb1823954988932c8f7fb"
             ],
-            "index": "pypi",
-            "version": "==0.1.1"
+            "version": "==0.1.4"
         },
         "heroku3": {
             "hashes": [
