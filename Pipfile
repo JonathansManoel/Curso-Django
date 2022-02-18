@@ -9,6 +9,7 @@ gunicorn = "*"
 heroku = "*"
 pytest = "*"
 python-decouple = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 flake8 = "*"

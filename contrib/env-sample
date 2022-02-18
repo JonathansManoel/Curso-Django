@@ -1,3 +1,4 @@
 DEBUG=False
 SECRET_KEY=django-insecure-eu$iy%6ede#a#e)5@do@!&(-bp@-_@&=d9(u#v9g+5(62v-%_6
 ALLOWED_HOSTS=localhost, 127.0.0.1
+DATABASE_URL=postgres://postgres:postgres@localhost/testedb
