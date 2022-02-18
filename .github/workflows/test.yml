@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     services:
       postgres:
-        image: postgresql
+        image: postgresql:13
         env:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
@@ -28,7 +28,9 @@ jobs:
       uses: actions/setup-python@v1
       with:
         python-version: 3.10.2
-
+    - name: cp contrib/env-sample .env
+      run: |
+        cp contrib/env-sample .env
     - name: Install dependencies
       run: |
         python3 -m pip install --upgrade pip
@@ -37,7 +39,7 @@ jobs:
         pipenv install codecov
         pipenv sync -d
         pipenv install --deploy --dev
-        cp contrib/env-sample .env
+
     - name: Test with pytest
       run: |
         pipenv run pytest --cov=pypro
