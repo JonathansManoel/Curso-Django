@@ -11,6 +11,7 @@ pytest = "*"
 python-decouple = "*"
 psycopg2-binary = "*"
 dj-database-url = "*"
+django-s3-folder-storage = "*"
 
 [dev-packages]
 flake8 = "*"
