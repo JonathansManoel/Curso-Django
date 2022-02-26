@@ -1,10 +1,16 @@
 from django.shortcuts import render
+from django.urls import reverse
+
 
 class Video:
     def __init__(self, slug, titulo, vimeo_id):
         self.slug = slug
         self.titulo = titulo
         self.vimeo_id = vimeo_id
+
+    def get_absolute_url(self):
+        return reverse('aperitivos:video', args=(self.slug,))
+
 
 videos = [
     Video('motivacao', 'Video Aperitivo: Motivação', '681730350?h=a247ca87c2'),
