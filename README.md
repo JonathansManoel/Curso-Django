@@ -1,5 +1,10 @@
 # Curso-Django
-Código desenvolvido no módulo de Django do Site Python Pro BR
+Criação e desenvolvimento de projeto em cima do framework DJANGO
+
+Gestor de depêndencias: pipenv
+
+Site do curso: https://pythonpro.com.br/
+
 Aplicação disponível em https://git.heroku.com/curso-jhon-django.git
 
 [![Updates](https://pyup.io/repos/github/JonathansManoel/Curso-Django/shield.svg)](https://pyup.io/repos/github/JonathansManoel/Curso-Django/)
