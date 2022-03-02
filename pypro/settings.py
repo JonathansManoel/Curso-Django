@@ -16,6 +16,7 @@ from pathlib import Path
 import dj_database_url
 from decouple import config, Csv
 import sentry_sdk
+
 from sentry_sdk.integrations.django import DjangoIntegration
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -36,7 +37,7 @@ AUTH_USER_MODEL = 'base.User'
 
 LOGIN_URL = '/contas/login/'
 LOGIN_REDIRECT_URL = '/modulos/'
-LOGOUT_REDIRECT_URL= '/'
+LOGOUT_REDIRECT_URL = '/'
 
 # Application definition
 
@@ -87,6 +88,16 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'pypro.wsgi.application'
+
+# Configuração de envio de Email
+
+EMAIL_BACKEND = config('EMAIL_BACKEND')
+EMAIL_HOST = config('EMAIL_HOST')
+EMAIL_PORT = config('EMAIL_PORT')
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
+EMAIL_USE_TLS = config('EMAIL_USE_TLS')
+
 
 # Configuração Django Debug Toolbar
 
