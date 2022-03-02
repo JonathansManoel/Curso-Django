@@ -5,7 +5,6 @@
    <div class="container">
         <div class="row">
 		    <div class="col">
-                {% block content %}
 
                 {% if form.errors %}
                 <p>Your username and password didn't match. Please try again.</p>
@@ -40,7 +39,6 @@
                 {# Assumes you setup the password_reset view in your URLconf #}
                 <p><a href="{% url 'password_reset' %}">Lost password?</a></p>
 
-                {% endblock %}
 		    </div>
 	    </div>
 
