@@ -1,4 +1,5 @@
 # Curso-Django
+### Curso da plataforma DevPro o melhor curso para te preparar para o mercado
 Criação e desenvolvimento de projeto em cima do framework DJANGO
 
 Gestor de depêndencias: pipenv
