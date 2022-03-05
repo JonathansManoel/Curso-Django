@@ -16,5 +16,5 @@
 #### Aplicação disponível Clique no link: [Curso_Django](https://curso-jhon-django.herokuapp.com)
 
 ## Usuário para teste:
-### E-mail: aluno@example.com
+### E-mail: aluno@example.com.br
 ### Senha: test-django
