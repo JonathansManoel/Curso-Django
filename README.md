@@ -17,4 +17,4 @@
 
 ## Usuário para teste:
 ### E-mail: aluno@example.com.br
-### Senha: test-django
+### Senha: teste-django
