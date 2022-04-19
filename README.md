@@ -18,3 +18,6 @@
 ## Usuário para teste:
 ### E-mail: aluno@exemplo.com.br
 ### Senha: teste-django
+
+# Projeto Rodando Localmente
+![curso-django](https://user-images.githubusercontent.com/96275361/163907880-cb7b25e5-1c7a-4ed0-9745-1c0dd384b77f.png)
